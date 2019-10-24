@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemDoVatActivitu">
+
+    <TextView
+        android:id="@+id/txtThem"
+        android:text="Thêm đồ vật"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#f20"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_below="@id/txtThem"
+        android:hint="Nhập tên đồ vật"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtMota"
+        android:layout_below="@id/edtTen"
+        android:hint="Nhập mô tả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:src="@drawable/picture"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imgCamera"
+        android:src="@drawable/photo_camera"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edtMota"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imgFolder"
+        android:src="@drawable/folder"
+        android:scaleType="fitXY"
+        android:layout_below="@id/edtMota"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:text="ADD"
+        android:layout_below="@id/imgView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imgView"
+        android:text="Cancel"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
